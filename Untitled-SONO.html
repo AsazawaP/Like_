@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>その他 | MyFavorites</title>
+
+  <style>
+    body {
+      font-family: "Yu Gothic", sans-serif;
+      margin: 0;
+      background: #f7f7f7;
+      color: #333;
+    }
+
+    .page {
+      max-width: 900px;
+      margin: auto;
+      padding-bottom: 40px;
+    }
+
+    /* ヒーロー画像 */
+    .artist-hero img {
+      width: 100%;
+      border-radius: 16px;
+      margin: 20px 0;
+    }
+
+    .genre-title {
+      font-size: 28px;
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .comment-section p {
+      padding: 0 15px;
+      line-height: 1.6;
+    }
+
+    .music-cards {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      margin-top: 20px;
+    }
+
+    .music-card {
+      background: #fff;
+      margin: 0 15px;
+      padding: 18px;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    }
+
+    .music-card h2 {
+      margin-top: 0;
+      color: #1a237e;
+    }
+
+    .video-wrapper {
+      width: 100%;
+      max-width: 777px;
+      height: 447px;
+      margin: 15px auto;
+      overflow: hidden;
+      border-radius: 14px;
+    }
+
+    .video-wrapper img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* スライドショー */
+    .slideshow {
+      width: 100%;
+      max-width: 777px;
+      height: 447px;
+      margin: 15px auto;
+      position: relative;
+      overflow: hidden;
+      border-radius: 14px;
+    }
+
+    .slideshow img {
+      width: auto;
+      height: 447px;
+      max-width: 100%;
+      object-fit: contain;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      opacity: 0;
+      transition: opacity 0.6s ease-in-out;
+    }
+
+    .slideshow img.active {
+      opacity: 1;
+    }
+
+    .music-card p {
+      margin-top: 10px;
+      line-height: 1.6;
+    }
+
+    /* ホームボタン */
+    .back-home {
+      text-align: center;
+      margin: 50px 0;
+    }
+
+    .back-home button {
+      padding: 14px 30px;
+      font-size: 15px;
+      background: linear-gradient(135deg, #1e88e5, #3949ab);
+      color: white;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+    }
+
+    .back-home button:hover {
+      transform: scale(1.05);
+      opacity: 0.9;
+    }
+  </style>
+</head>
+
+<body>
+<div class="page">
+
+  <div class="artist-hero">
+    <img src="img/6705d77f2d837e528fb0edd21579e9c0_t.jpeg" alt="">
+  </div>
+
+  <h1 class="genre-title">✨ その他の好きなもの紹介</h1>
+
+  <section class="comment-section">
+    <p>
+      この「その他」では、1ページ紹介ができなかった作品をまとめています。<br>
+      好きなキャラクターやビジュアルを中心に掲載しています。
+    </p>
+  </section>
+
+  <div class="music-cards">
+
+    <div class="music-card">
+      <h2>プロジェクトセカイ カラフルステージ! feat. 初音ミク</h2>
+      <div class="video-wrapper">
+        <img src="img/img_illust_18.png" alt="">
+      </div>
+      <p>
+        ボカロ好き・音ゲー好き必見の作品ですが、
+        好きなオリジナル曲が少なかったため断念しました。
+      </p>
+    </div>
+
+    <div class="music-card">
+      <h2>戦国 A LIVE</h2>
+      <div class="video-wrapper">
+        <img src="img/eyJidWNrZXQiOiJnYW1lcmNoLWltZy1jb250ZW50cyIsImtleSI6Indpa2lcLzQ0MzdcL2VudHJ5XC9ZZTJMNkZhei5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjQwMCwiZml0IjoiY292ZXIifX19.png" alt="">
+      </div>
+      <p>
+        戦国武将が現代で歌うという独特な世界観の作品ですが、
+        サービス終了により断念しました。
+      </p>
+    </div>
+
+    <div class="music-card">
+      <h2>学園アイドルマスター</h2>
+      <div class="slideshow">
+        <img src="img/bd83c7f7c315add1.png" class="slide active">
+        <img src="img/65afd1bc7836efe1.png" class="slide">
+      </div>
+      <p>
+        学園を舞台にした育成作品ですが、
+        暇つぶし程度のプレイのため断念しました。
+      </p>
+    </div>
+
+    <div class="music-card">
+      <h2>ワールドダイスター 夢のステラリウム</h2>
+      <div class="slideshow">
+        <img src="img/9GtQSmyz.png" class="slide active">
+        <img src="img/9ptxz86Z.png" class="slide">
+      </div>
+      <p>
+        演劇がテーマの作品で楽曲は魅力的ですが、
+        内容が薄くなるため断念しました。
+      </p>
+    </div>
+
+    <div class="music-card">
+      <h2>アイドルマスター シンデレラガールズ</h2>
+      <div class="video-wrapper">
+        <img src="img/20220911173010.png" alt="">
+      </div>
+      <p>
+        キャラ数が非常に多く、
+        好きなオリジナル曲が少ないため断念しました。
+      </p>
+    </div>
+
+    <div class="music-card">
+      <h2>東方Project</h2>
+      <div class="slideshow">
+        <img src="img/images.jpg" class="slide active">
+        <img src="img/dannkagu1.jpg" class="slide">
+        <img src="img/FCNnqApVcAAwyAg.jpg" class="slide">
+        <img src="img/m133.jpg" class="slide">
+        <img src="img/ssr070_img.jpg" class="slide">
+      </div>
+      <p>
+        二次創作が非常に多く、
+        情報整理が難しいため断念しました。
+      </p>
+    </div>
+
+  </div>
+
+  <div class="back-home">
+    <button onclick="goHome()">🏠 ホームに戻る</button>
+  </div>
+
+</div>
+
+<script>
+  const slideshows = document.querySelectorAll('.slideshow');
+
+  slideshows.forEach(slideshow => {
+    const slides = slideshow.querySelectorAll('.slide');
+    let current = 0;
+
+    setInterval(() => {
+      slides[current].classList.remove('active');
+      current = (current + 1) % slides.length;
+      slides[current].classList.add('active');
+    }, 3000);
+  });
+
+  function goHome() {
+    location.href = "Untitled-1.html";
+  }
+</script>
+
+</body>
+</html>

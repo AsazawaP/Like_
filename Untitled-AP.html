@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>好きなキャラ紹介 - IDOLY PRIDE</title>
+
+<style>
+body {
+  font-family: "Yu Gothic", sans-serif;
+  margin: 0;
+  background: #fff3e0;
+  color: #333;
+}
+
+.page {
+  max-width: 900px;
+  margin: auto;
+  padding-bottom: 40px;
+}
+
+/* ヒーロー画像 */
+.artist-hero img {
+  width: 100%;
+  border-radius: 16px;
+  margin: 20px 0;
+}
+
+/* タイトル */
+h1 {
+  text-align: center;
+  color: #e65100;
+}
+
+/* 説明 */
+.genre-section {
+  background: white;
+  margin: 20px 15px;
+  padding: 20px;
+  border-radius: 18px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.18);
+}
+
+.genre-title {
+  background: linear-gradient(135deg, #ff9800, #ff5722);
+  color: white;
+  padding: 10px;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 26px;
+}
+
+.comment-section p {
+  line-height: 1.7;
+  padding: 0 10px;
+}
+
+/* キャラカード */
+.character-card {
+  background: white;
+  margin: 25px 15px;
+  padding: 18px;
+  border-radius: 20px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.22);
+  text-align: center;
+}
+
+.character-card img {
+  width: 100%;
+  max-width: 777px;
+  height: auto;
+  border-radius: 14px;
+  margin-bottom: 12px;
+}
+
+.character-info h2 {
+  margin: 10px 0;
+  color: #e65100;
+}
+
+/* 曲リスト */
+.song-list {
+  list-style: none;
+  padding: 0;
+}
+
+.song-list li {
+  margin: 8px 0;
+}
+
+.song-list a {
+  color: #d84315;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.song-list a:hover {
+  text-decoration: underline;
+}
+
+/* ホーム戻る */
+.back-home {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.back-home button {
+  padding: 12px 24px;
+  font-size: 15px;
+  background: linear-gradient(135deg, #ff7043, #ff9800);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.back-home button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+</style>
+</head>
+
+<body>
+<div class="page">
+
+<div class="artist-hero">
+  <img src="img/pc.jpg" alt="IDOLY PRIDE キービジュアル">
+</div>
+
+<h1>好きなキャラ紹介</h1>
+
+<section class="genre-section">
+  <h2 class="genre-title">✨ IDOLY PRIDE</h2>
+  <div class="comment-section">
+    <p>
+      事務所のマネージャーとしてアイドルを育成するゲームです。<br>
+      ストーリーでのリアルなアイドル業界の表現が特徴です。
+    </p>
+  </div>
+</section>
+
+<div class="character-card">
+  <img src="img/GA0o72PagAANN6N.jpeg" alt="miho">
+  <h2>miho</h2>
+  <ul class="song-list">
+    <li><a href="https://www.youtube.com/watch?v=lxVWqthq8Uw" target="_blank">Blow Up</a></li>
+  </ul>
+</div>
+
+<div class="character-card">
+  <img src="img/IMG_6585-512x289.png" alt="白石 千紗">
+  <h2>白石 千紗</h2>
+  <ul class="song-list">
+    <li><a href="https://www.youtube.com/watch?v=g4wL8XL5uaw" target="_blank">EVERYDAY! SUNNYDAY!</a></li>
+  </ul>
+</div>
+
+<div class="character-card">
+  <img src="img/GfdPYW6bcAAkbZB.jpg" alt="井川 葵">
+  <h2>井川 葵</h2>
+  <ul class="song-list">
+    <li><a href="https://www.youtube.com/watch?v=jzuhI-Ll7TE" target="_blank">The Last Chance</a></li>
+  </ul>
+</div>
+
+<div class="character-card">
+  <img src="img/GpWY5pFaMAADUS2.jpg" alt="奥山 すみれ">
+  <h2>奥山 すみれ</h2>
+  <ul class="song-list">
+    <li><a href="https://www.youtube.com/watch?v=AlYxgEcJpxU" target="_blank">Fantastique!</a></li>
+  </ul>
+</div>
+
+<div class="back-home">
+  <button onclick="goHome()">🏠 ホームに戻る</button>
+</div>
+
+</div>
+
+<script>
+function goHome() {
+  location.href = "Untitled-1.html";
+}
+</script>
+
+</body>
+</html>

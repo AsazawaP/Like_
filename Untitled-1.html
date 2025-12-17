@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>好きなもの紹介サイト</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Yu Gothic", sans-serif;
+      background: #eef3ff;
+    }
+
+    /* ===== ヘッダー（4:3 スライドショー） ===== */
+    header {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  max-height: 360px;   /* ★ ここで大きさを抑える */
+  margin: auto;
+  overflow: hidden;
+}
+
+
+    .header-slideshow {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+
+    .header-slideshow img {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0;
+      transition: opacity 0.8s ease-in-out;
+      z-index: 1;
+    }
+
+    .header-slideshow img.active {
+      opacity: 1;
+    }
+
+    /* ===== ヘッダー文字（縁取り） ===== */
+    .header-text {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.45);
+      z-index: 2;
+    }
+
+    .header-text h1 {
+      margin: 0;
+      font-size: 32px;
+      color: #ffffff;
+      text-shadow:
+        -2px -2px 0 #0d47a1,
+         2px -2px 0 #0d47a1,
+        -2px  2px 0 #0d47a1,
+         2px  2px 0 #0d47a1,
+         0   -2px 0 #0d47a1,
+         0    2px 0 #0d47a1,
+        -2px  0   0 #0d47a1,
+         2px  0   0 #0d47a1;
+    }
+
+    .header-text p {
+      margin-top: 8px;
+      font-size: 16px;
+      color: #ffffff;
+      text-shadow:
+        -1px -1px 0 #f50057,
+         1px -1px 0 #f50057,
+        -1px  1px 0 #f50057,
+         1px  1px 0 #f50057;
+    }
+
+    /* ===== ナビ ===== */
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      background: #1e2a78;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 14px;
+      background: #3949ab;
+      border-radius: 20px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    nav a:hover {
+      background: #5c6bc0;
+      transform: translateY(-2px);
+    }
+
+    /* ===== メイン ===== */
+    main {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .genre-card {
+      background: white;
+      padding: 18px;
+      margin: 15px 0;
+      border-radius: 14px;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+      text-align: center;
+    }
+
+    .genre-card h2 {
+      color: #1e2a78;
+      margin-top: 0;
+    }
+
+    .genre-card button {
+      margin-top: 12px;
+      padding: 10px 16px;
+      background: linear-gradient(135deg, #ff5722, #ff9800);
+      color: white;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="header-slideshow">
+    <img src="img/321904000153.jpg" class="slide active">
+    <img src="img/default_v8.png" class="slide">
+    <img src="img/Euk84C2VEAQHJuN.png" class="slide">
+    <img src="img/thumbnail_sxjl.jpg" class="slide">
+    <img src="img/resize_image.jpg" class="slide">
+    <img src="img/img_kv_3.jpg" class="slide">
+    <img src="img/img_mainvisual_groovymix2023.jpg" class="slide">
+
+    <div class="header-text">
+      <h1>好きなもの紹介サイト</h1>
+      <p>私が好きなものを集めたページ</p>
+    </div>
+  </div>
+</header>
+
+<nav>
+  <a onclick="goPage('UntitledUV.html')">UVERworld</a>
+  <a onclick="goPage('Untitled-ES.html')">あんスタ</a>
+  <a onclick="goPage('Untitled-BG.html')">バンドリ！</a>
+  <a onclick="goPage('Untitled-ER.html')">エリオス</a>
+  <a onclick="goPage('Untitled-AP.html')">アイプラ</a>
+  <a onclick="goPage('Untitled-７７７.html')">ナナシス</a>
+  <a onclick="goPage('Untitled-AMS.html')">シャニマス</a>
+  <a onclick="goPage('Untitled-D4.html')">グルミク</a>
+  <a onclick="goPage('Untitled-SONO.html')">その他</a>
+</nav>
+
+<main>
+
+  <div class="genre-card">
+    <h2>UVERworld</h2>
+    <p>おすすめ楽曲を紹介しています。</p>
+    <button onclick="goPage('UntitledUV.html')">ページへ</button>
+  </div>
+
+  <div class="genre-card">
+    <h2>あんスタ</h2>
+    <p>アイドル育成ゲーム「あんさんぶるスターズ!!」のキャラクターや楽曲紹介。</p>
+    <button onclick="goPage('Untitled-ES.html')">ページへ</button>
+  </div>
+
+  <div class="genre-card">
+    <h2>バンドリ！</h2>
+    <p>ガールズバンドプロジェクトのキャラクターや楽曲を紹介。</p>
+    <button onclick="goPage('Untitled-BG.html')">ページへ</button>
+  </div>
+
+  <div class="genre-card">
+    <h2>エリオス</h2>
+    <p>スマホゲーム「エリオス」のキャラクター紹介。</p>
+    <button onclick="goPage('Untitled-ER.html')">ページへ</button>
+  </div>
+  <div class="genre-card">
+  <h2>アイプラ</h2>
+  <p>IDOLY PRIDE のキャラクター・楽曲紹介。</p>
+  <button onclick="goPage('Untitled-AP.html')">ページへ</button>
+</div>
+
+<div class="genre-card">
+  <h2>ナナシス</h2>
+  <p>Tokyo 7th シスターズのキャラクター・楽曲紹介。</p>
+  <button onclick="goPage('Untitled-７７７.html')">ページへ</button>
+</div>
+
+<div class="genre-card">
+  <h2>シャニマス</h2>
+  <p>アイドルマスター シャイニーカラーズのキャラクター紹介。</p>
+  <button onclick="goPage('Untitled-AMS.html')">ページへ</button>
+</div>
+
+<div class="genre-card">
+  <h2>グルミク</h2>
+  <p>D4DJ Groovy Mix のキャラクター・楽曲紹介。</p>
+  <button onclick="goPage('Untitled-D4.html')">ページへ</button>
+</div>
+
+
+  <div class="genre-card">
+    <h2>その他</h2>
+    <p>その他の好きな作品まとめ。</p>
+    <button onclick="goPage('Untitled-SONO.html')">ページへ</button>
+  </div>
+
+</main>
+
+<script>
+  const headerSlides = document.querySelectorAll('.header-slideshow .slide');
+  let current = 0;
+
+  setInterval(() => {
+    headerSlides[current].classList.remove('active');
+    current = (current + 1) % headerSlides.length;
+    headerSlides[current].classList.add('active');
+  }, 3000);
+
+  function goPage(url) {
+    location.href = url;
+  }
+</script>
+
+</body>
+</html>

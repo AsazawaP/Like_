@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>好きなキャラ紹介 - D4DJ</title>
+
+<style>
+body {
+  font-family: "Yu Gothic", sans-serif;
+  margin: 0;
+  background: radial-gradient(circle at top, #1a1f3c, #090b1a);
+  color: #e0e0ff;
+}
+
+.page {
+  max-width: 900px;
+  margin: auto;
+  padding-bottom: 40px;
+}
+
+/* ヒーロー画像 */
+.artist-hero img {
+  width: 100%;
+  border-radius: 22px;
+  margin: 20px 0;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+}
+
+/* 共通タイトル */
+h1 {
+  text-align: center;
+  color: #ffffff;
+  letter-spacing: 0.1em;
+}
+
+/* 作品説明 */
+.genre-section {
+  background: rgba(20,25,60,0.95);
+  margin: 20px 15px;
+  padding: 22px;
+  border-radius: 24px;
+  box-shadow: 0 8px 28px rgba(0,0,0,0.6);
+}
+
+/* ジャンルタイトル */
+.genre-title {
+  background: linear-gradient(135deg, #ff2fd4, #00e5ff);
+  color: #ffffff;
+  text-align: center;
+  padding: 12px;
+  border-radius: 18px;
+  font-size: 26px;
+  letter-spacing: 0.12em;
+}
+
+.comment-section p {
+  line-height: 1.8;
+  padding: 10px;
+  color: #cfd8ff;
+}
+
+/* キャラカード */
+.character-card {
+  background: linear-gradient(180deg, #151a3a, #0e1129);
+  margin: 30px 15px;
+  padding: 22px;
+  border-radius: 28px;
+  box-shadow: 0 12px 36px rgba(0,0,0,0.7);
+  text-align: center;
+}
+
+.character-card img {
+  width: 100%;
+  max-width: 777px;
+  height: auto;
+  border-radius: 18px;
+  margin-bottom: 16px;
+}
+
+/* キャラ名 */
+.character-card h2 {
+  margin: 12px 0;
+  color: #ff77e9;
+  letter-spacing: 0.08em;
+}
+
+/* 曲リスト */
+.song-list {
+  list-style: none;
+  padding: 0;
+}
+
+.song-list li {
+  margin: 12px 0;
+}
+
+.song-list a {
+  color: #00e5ff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.song-list a:hover {
+  text-decoration: underline;
+}
+
+/* ホームボタン */
+.back-home {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.back-home button {
+  padding: 14px 32px;
+  font-size: 15px;
+  background: linear-gradient(135deg, #ff2fd4, #00e5ff);
+  color: white;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  letter-spacing: 0.1em;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.6);
+}
+
+.back-home button:hover {
+  transform: scale(1.08);
+  opacity: 0.9;
+}
+</style>
+</head>
+
+<body>
+<div class="page">
+
+<div class="artist-hero">
+  <img src="img/img_mainvisual_groovymix2023.jpg" alt="D4DJ キービジュアル">
+</div>
+
+<h1>好きなキャラ紹介</h1>
+
+<section class="genre-section">
+  <h2 class="genre-title">✨ D4DJ</h2>
+  <div class="comment-section">
+    <p>
+      4人でDJ活動をするリズムゲーム。<br>
+      ユニットごとに音楽ジャンルや世界観が大きく異なるのが魅力です。
+    </p>
+  </div>
+</section>
+
+<div class="character-card">
+  <img src="img/1635090710060_7gmdq9tc.jpg" alt="三宅 葵依">
+  <h2>三宅 葵依</h2>
+  <ul class="song-list">
+    <li><a href="https://www.youtube.com/watch?v=Tcm6xNt8qAY" target="_blank">
+      Blooming rose in the other world
+    </a></li>
+  </ul>
+</div>
+
+<div class="character-card">
+  <img src="img/1725162824011_yx2cpugw.jpg" alt="一星 ルミナ">
+  <h2>一星 ルミナ</h2>
+  <ul class="song-list">
+    <li><a href="https://www.youtube.com/watch?v=yzyJIplEBrk" target="_blank">
+      バズゾンビ
+    </a></li>
+  </ul>
+</div>
+
+<div class="character-card">
+  <img src="img/sddefault.jpg" alt="ソフィア">
+  <h2>ソフィア</h2>
+  <ul class="song-list">
+    <li><a href="https://www.youtube.com/watch?v=vrg19Aop0i4" target="_blank">
+      WINNER
+    </a></li>
+  </ul>
+</div>
+
+<div class="back-home">
+  <button onclick="goHome()">🏠 ホームに戻る</button>
+</div>
+
+</div>
+
+<script>
+function goHome() {
+  location.href = "Untitled-1.html";
+}
+</script>
+
+</body>
+</html>
